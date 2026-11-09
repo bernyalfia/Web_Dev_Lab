@@ -1,0 +1,144 @@
+
+
+:root {
+    --primary-color: #5b4bdb;
+    --secondary-color: #f3f0ff;
+    --text-color: #222222;
+    --heading-font: Arial, sans-serif;
+    --body-font: Georgia, serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* P7: Basic Header and Footer Styling */
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    color: white;
+}
+
+/* P8: Sticky Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    padding: 15px;
+    z-index: 100;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* P8: Project Cards */
+.project-card {
+    position: relative;
+    background-color: white;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* P8: Card Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(91, 75, 219, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+/* P9: Responsive Project Grid using Flexbox */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects h2 {
+    width: 100%;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    box-sizing: border-box;
+}
+
+/* P9: Responsive layout for mobile screens */
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #projects {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* P10: Flexbox Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* P10: Flexbox Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
