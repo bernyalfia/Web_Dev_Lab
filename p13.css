@@ -39,7 +39,6 @@ h2 {
     color: #5b4bdb;
 }
 
-/* Flexbox Layout */
 .flex-container {
     display: flex;
     justify-content: space-around;
@@ -56,8 +55,6 @@ h2 {
     flex: 1;
     border-radius: 8px;
 }
-
-/* CSS Grid Layout */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,8 +69,6 @@ h2 {
     border-radius: 8px;
     font-weight: bold;
 }
-
-/* Comparison Table */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -89,8 +84,6 @@ th {
     background-color: #5b4bdb;
     color: white;
 }
-
-/* Responsive Layout */
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -100,8 +93,6 @@ th {
         flex-direction: column;
     }
 }
-
-/* Footer */
 footer {
     background-color: #5b4bdb;
     color: white;
