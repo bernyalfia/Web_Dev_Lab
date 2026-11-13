@@ -58,8 +58,6 @@ header h1 {
     text-decoration: none;
     margin-right: 15px;
 }
-
-/* P8: Project Cards */
 .project-card {
     position: relative;
     background-color: white;
@@ -69,8 +67,6 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
-
-/* P8: Card Overlay */
 .overlay {
     position: absolute;
     bottom: 0;
@@ -87,8 +83,6 @@ header h1 {
 .project-card:hover .overlay {
     opacity: 1;
 }
-
-/* P9: Responsive Project Grid using Flexbox */
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -103,8 +97,6 @@ header h1 {
     flex: 1 1 300px;
     box-sizing: border-box;
 }
-
-/* P9: Responsive layout for mobile screens */
 @media (max-width: 600px) {
     .navbar {
         display: flex;
@@ -121,8 +113,6 @@ header h1 {
         margin: 0;
     }
 }
-
-/* P10: Flexbox Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -134,7 +124,7 @@ header h1 {
     margin: 0;
 }
 
-/* P10: Flexbox Footer */
+
 footer {
     display: flex;
     justify-content: center;
