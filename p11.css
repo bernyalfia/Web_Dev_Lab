@@ -44,8 +44,6 @@ footer {
     text-align: center;
     padding: 15px;
 }
-
-/* Responsive layout */
 @media (max-width: 700px) {
     .newspaper {
         grid-template-columns: 1fr;
