@@ -33,7 +33,6 @@ p {
     font-size: 16px;
 }
 
-/* P7: Basic Header and Footer Styling */
 header, footer {
     background-color: var(--primary-color);
     color: white;
@@ -43,8 +42,6 @@ header, footer {
 header h1 {
     color: white;
 }
-
-/* P8: Sticky Navigation */
 .navbar {
     position: sticky;
     top: 0;
