@@ -51,8 +51,6 @@ footer {
     text-align: center;
     padding: 15px;
 }
-
-/* Responsive layout */
 @media (max-width: 800px) {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
