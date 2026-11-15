@@ -1,0 +1,31 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #ecafde;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.project-card {
+    position: relative;
+    padding: 50px;
+    margin: 20px;
+    background-color: #f3f0ff;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(91,75,219,0.9);
+    color: white;
+    padding: 10px 0;
+}
