@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBite</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            background-color: #fff8f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #e87532;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #e87532;
+        }
+
+        main {
+            width: 90%;
+            margin: auto;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        #home {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .special {
+            background-color: #ffe0c2;
+            padding: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .menu h2 {
+            text-align: center;
+            margin: 1rem;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .card {
+            background-color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .card h3 {
+            color: #e87532;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        @media (min-width: 600px) {
+
+            nav {
+                flex-direction: row;
+            }
+
+            nav a {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 950px) {
+
+            main {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-areas:
+                    "home home"
+                    "special menu";
+                gap: 1rem;
+                align-items: start;
+            }
+
+            #home {
+                grid-area: home;
+            }
+
+            .special {
+                grid-area: special;
+            }
+
+            .menu {
+                grid-area: menu;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CampusBite Page</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#special">Specials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome back foodie! 😈</h2>
+            <p>Fresh Food, Happy Campus!</p>
+        </section>
+
+        <section class="special" id="special">
+            <h2>Today's Special</h2>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6TJ-kvDOFwEpHBjm_mTSq8UsUVkavtkrZNF1O-KsSg&s=10"
+                 width="250" height="150"
+                 alt="Delicious cheese burger">
+
+            <h3>Cheese Burger</h3>
+            <p>Special Price: ₹2000</p>
+        </section>
+
+        <section class="menu" id="menu">
+            <h2>Our Menu</h2>
+
+            <div class="menu-grid">
+
+                <div class="card">
+                    <img src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/HomeProductV1/969b9adf-9cba-4936-a096-bb313680b049_PMpprbbqsidejpgFull2x2702.webp"
+                         width="200" height="100" alt="Pizza">
+
+                    <h3>Pepper Chicken Barbecue Pizza</h3>
+                    <p>₹1600</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYtzz-YIpURFIqsW-6DTb9b0dEHSr0Y_LqznvfTz5X6QsD6EGc-aYDT6M&s=10"
+                         width="200" height="100" alt="Chicken Wings">
+
+                    <h3>Chicken Wings</h3>
+                    <p>₹900</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://thumbs.dreamstime.com/b/lots-kfc-french-fries-bucket-kentucky-fried-chicken-fast-food-moscow-russia-july-isolated-white-background-192188138.jpg"
+                         width="200" height="100" alt="French Fries">
+
+                    <h3>French Fries</h3>
+                    <p>₹780</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.ctfassets.net/wtodlh47qxpt/4QQuWfDlISkhS2AVGGPvgc/b5136a770f660b7e9abdd764b5759dc1/Choco-Mud-Pie.jpg?h=600&w=800&fm=webp&fit=fill"
+                         width="200" height="100" alt="Chocolate Mud Pie">
+
+                    <h3>Mug Cake Pie</h3>
+                    <p>₹50</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>© 2026 CampusBite</p>
+        <p>Contact: foodie08e@gmail.com</p>
+    </footer>
+
+</body>
+</html>
